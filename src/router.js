@@ -9,12 +9,12 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: './',
       name: 'home',
       component: Home
     },
     {
-      path: '/about',
+      path: './about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
