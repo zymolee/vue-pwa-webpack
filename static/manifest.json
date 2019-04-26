@@ -1,7 +1,7 @@
 {
     "start_url": "/?utm_source=homescreen",
-    "name": "lavas-pro",
-    "short_name": "lavas-pro",
+    "name": "vue-pwa-webpack",
+    "short_name": "vue-pwa-webpack",
     "icons": [
         {
             "src": "img/icons/android-chrome-512x512.png",

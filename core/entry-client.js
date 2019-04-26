@@ -1,6 +1,6 @@
 /**
  * @file client entry
- * @author zymo(zymorain@qq.com)
+ * @author zimli(zymorain@qq.com)
  */
 
 import Vue from 'vue';

@@ -1,4 +1,9 @@
-/**
+
+        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        workbox.setConfig({
+            modulePathPrefix: '/static/workbox-v3.6.3/'
+        });
+    /**
  * @file service-worker.js with workbox api
  * @desc [example](https://workbox-samples.glitch.me/examples/workbox-sw/)
  * @author zimli(zymorain@qq.com)
@@ -43,3 +48,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
+workbox.routing.registerNavigationRoute('/index.html');

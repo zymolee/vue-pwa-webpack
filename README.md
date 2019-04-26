@@ -1,4 +1,4 @@
-# lavas-pro
+# vue-pwa-webpack
 
 > 这是一个 Lavas PWA 项目
 

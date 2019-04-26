@@ -1,6 +1,6 @@
 /**
  * @file server entry
- * @author zymo(zymorain@qq.com)
+ * @author zimli(zymorain@qq.com)
  */
 
 import {getMiddlewares, getServerContext, execSeries, createNext} from '@/.lavas/middleware';

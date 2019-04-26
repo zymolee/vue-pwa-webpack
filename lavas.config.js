@@ -1,6 +1,6 @@
 /**
  * @file lavas config
- * @author zymo(zymorain@qq.com)
+ * @author zimli(zymorain@qq.com)
  */
 
 'use strict';
