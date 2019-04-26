@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "https://zymolee.github.io/vue-pwa-webpack/dist/js/chunk-vendors.47350325.js"
   },
   {
-    "revision": "84ae1bbb2f9c392f9539",
-    "url": "https://zymolee.github.io/vue-pwa-webpack/dist/js/app.c71154e9.js"
+    "revision": "e61b35a77a3407f9ab29",
+    "url": "https://zymolee.github.io/vue-pwa-webpack/dist/js/app.4ddfb23e.js"
   },
   {
     "revision": "e3265da0b912786c641c",
     "url": "https://zymolee.github.io/vue-pwa-webpack/dist/js/about.69260e02.js"
   },
   {
-    "revision": "884644800084630a004e00a4250a50c5",
+    "revision": "446ff058f9d10a3fa4e91e910adbd9ec",
     "url": "https://zymolee.github.io/vue-pwa-webpack/dist/index.html"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "https://zymolee.github.io/vue-pwa-webpack/dist/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "84ae1bbb2f9c392f9539",
+    "revision": "e61b35a77a3407f9ab29",
     "url": "https://zymolee.github.io/vue-pwa-webpack/dist/css/app.485f6fe7.css"
   }
 ];
