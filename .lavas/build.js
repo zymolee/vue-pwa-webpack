@@ -1,5 +1,3 @@
-'use strict';
-
 var path = require('path');
 
 var LavasCore = require('lavas-core-vue');
@@ -14,6 +12,6 @@ if (process.argv.length >= 3 && process.argv[2] !== 'build') {
 
 process.env.NODE_ENV = 'production';
 
-core.init(process.env.NODE_ENV, true, { config }).then(function () {
+core.init(process.env.NODE_ENV, true, {config}).then(function () {
     core.build();
 });
