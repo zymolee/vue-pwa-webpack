@@ -8,6 +8,11 @@
             "meta": {}
         },
         {
+            "path": "/cosmos",
+            "name": "cosmos",
+            "meta": {}
+        },
+        {
             "path": "/",
             "name": "index",
             "meta": {}
