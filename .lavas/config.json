@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1556273140348,
+    "buildVersion": 1556436837964,
     "build": {
         "ssr": false,
         "publicPath": "/",
@@ -16,6 +16,7 @@
         "base": "/",
         "pageTransition": {
             "type": "fade",
+            "effect": "fade",
             "transitionClass": "fade"
         }
     },
@@ -30,6 +31,13 @@
     },
     "skeleton": {
         "enable": true,
-        "asyncCSS": true
+        "asyncCSS": true,
+        "routes": [
+            {
+                "path": "/",
+                "skeletonId": "my-skeleton",
+                "componentPath": "core/Skeleton.vue"
+            }
+        ]
     }
 }

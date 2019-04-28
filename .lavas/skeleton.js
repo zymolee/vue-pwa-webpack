@@ -12,7 +12,7 @@ export default new Vue({
     template: `
         <div>
             
-            <skeleton id="skeleton" style="display:none"/>
+            <skeleton id="my-skeleton" style="display:none"/>
             
         </div>
     `

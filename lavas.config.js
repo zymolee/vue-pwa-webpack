@@ -29,6 +29,7 @@ module.exports = {
         base: '/',
         pageTransition: {
             type: 'fade',
+            effect: 'fade',
             transitionClass: 'fade'
         }
     },
@@ -50,5 +51,14 @@ module.exports = {
         // URL of appshell page
         // ONLY works in SSR mode
         appshellUrl: '/appshell'
+    },
+    skeleton: {
+        routes: [
+            {
+                path: '/',
+                skeletonId: 'my-skeleton',
+                componentPath: 'core/Skeleton.vue'
+            },
+        ]
     }
 };

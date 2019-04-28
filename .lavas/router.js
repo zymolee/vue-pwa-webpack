@@ -2,34 +2,44 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
     
-import _15562731403749d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
+import _15564368379769d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
     
 
     
-import _1556273140374d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
+import _15564368379765aab79c53e1b9f64ee6d4414be0c230a from '@/pages/Cosmos.vue';
     
 
     
-import _155627314037467830448037326425509e44bce7632b7 from '@/pages/Index.vue';
+import _1556436837976d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
+    
+
+    
+import _155643683797667830448037326425509e44bce7632b7 from '@/pages/Index.vue';
     
 
 
 let routes = [
     {
         "path": "/appshell",
-        "component": _15562731403749d49a922ebc8a6d77ca82c0a74289b98,
+        "component": _15564368379769d49a922ebc8a6d77ca82c0a74289b98,
         "meta": {},
         "name": "appshell"
     },
     {
+        "path": "/cosmos",
+        "component": _15564368379765aab79c53e1b9f64ee6d4414be0c230a,
+        "meta": {},
+        "name": "cosmos"
+    },
+    {
         "path": "/",
-        "component": _155627314037467830448037326425509e44bce7632b7,
+        "component": _155643683797667830448037326425509e44bce7632b7,
         "meta": {},
         "name": "index"
     },
     {
         "path": "/error",
-        "component": _1556273140374d2462dcf0c7beccd286c658e08187914,
+        "component": _1556436837976d2462dcf0c7beccd286c658e08187914,
         "meta": {},
         "name": "error",
         "alias": "*"
