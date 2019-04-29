@@ -36,14 +36,14 @@ export default {
 		]
 	},
 	methods: {
-    go3d: function () {
-    	if (window.location.pathname.indexOf('pwa_three_show')>=0) {
-    		window.location.href="/pwa_three_show/Cosmos/";
-    		return;
-    	}
-    		window.location.href="/Cosmos/";
-    }
-  },
+		go3d: function () {
+			if (window.location.pathname.indexOf('pwa_three_show')>=0) {
+				window.location.href="/pwa_three_show/Cosmos/";
+				return;
+			}
+			window.location.href="/Cosmos/";
+		}
+	},
 	async asyncData({store, route}) {
 		setState(store);
 	}

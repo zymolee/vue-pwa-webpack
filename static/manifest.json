@@ -1,7 +1,7 @@
 {
-    "start_url": "/?utm_source=homescreen",
-    "name": "vue-pwa-webpack",
-    "short_name": "vue-pwa-webpack",
+    "start_url": "/pwa_three_show/?utm_source=homescreen",
+    "name": "pwa-THREE",
+    "short_name": "pwaT",
     "icons": [
         {
             "src": "img/icons/android-chrome-512x512.png",

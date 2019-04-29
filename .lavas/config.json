@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1556519724733,
+    "buildVersion": 1556524594309,
     "build": {
         "ssr": false,
         "publicPath": "/pwa_three_show/",
@@ -33,7 +33,7 @@
         "asyncCSS": true,
         "routes": [
             {
-                "path": "/",
+                "path": "/pwa_three_show/",
                 "skeletonId": "my-skeleton",
                 "componentPath": "core/Skeleton.vue"
             }

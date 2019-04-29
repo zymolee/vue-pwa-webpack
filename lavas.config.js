@@ -54,7 +54,7 @@ module.exports = {
     skeleton: {
         routes: [
             {
-                path: '/',
+                path: isDev ? '/' : '/pwa_three_show/',
                 skeletonId: 'my-skeleton',
                 componentPath: 'core/Skeleton.vue'
             },
