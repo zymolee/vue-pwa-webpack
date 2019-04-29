@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "047f3021e153c19951f86dd209904243",
-    "url": "/vue-pwa-webpack/dist/static/img/icons/favicon-32x32.png"
+    "revision": "3742528143340e36915adf388d64060f",
+    "url": "/vue-pwa-webpack/dist/static/img/icons/favicon-16x16.png"
   },
   {
     "revision": "01fb71892b84f7836697",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/vue-pwa-webpack/dist/static/js/manifest.b69fb7fd.js"
   },
   {
-    "revision": "5d6841d583f9b27aeedd2a8dcdde606d",
-    "url": "/vue-pwa-webpack/dist/static/img/home/satellite-station.png"
+    "revision": "39d86f794d47b3fc5119d7054fb0426d",
+    "url": "/vue-pwa-webpack/dist/static/img/home/rocket.png"
   },
   {
     "revision": "b451e38c6ee4b03781b1019c518e7894",
@@ -36,16 +36,16 @@ self.__precacheManifest = [
     "url": "/vue-pwa-webpack/dist/static/img/icons/apple-touch-icon-60x60.png"
   },
   {
-    "revision": "3742528143340e36915adf388d64060f",
-    "url": "/vue-pwa-webpack/dist/static/img/icons/favicon-16x16.png"
+    "revision": "047f3021e153c19951f86dd209904243",
+    "url": "/vue-pwa-webpack/dist/static/img/icons/favicon-32x32.png"
   },
   {
     "revision": "588079df8f1b8fde3b3cd691ee65bf06",
     "url": "/vue-pwa-webpack/dist/static/img/icons/apple-touch-icon-76x76.png"
   },
   {
-    "revision": "7a751e71eef37f42212d",
-    "url": "/vue-pwa-webpack/dist/static/js/index.7a751e71.js"
+    "revision": "7c2d46452ff073626fac",
+    "url": "/vue-pwa-webpack/dist/static/js/index.7c2d4645.js"
   },
   {
     "revision": "0ff69c8fca81469c28f589d5fad0616e",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/vue-pwa-webpack/dist/static/img/icons/android-chrome-192x192.png"
   },
   {
-    "revision": "39d86f794d47b3fc5119d7054fb0426d",
-    "url": "/vue-pwa-webpack/dist/static/img/home/rocket.png"
+    "revision": "5d6841d583f9b27aeedd2a8dcdde606d",
+    "url": "/vue-pwa-webpack/dist/static/img/home/satellite-station.png"
   },
   {
     "revision": "497f706f23ac9bfaa5060bf8cadd2aa1",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/vue-pwa-webpack/dist/static/img/cosmos/sky.jpg"
   },
   {
-    "revision": "7a751e71eef37f42212d",
+    "revision": "7c2d46452ff073626fac",
     "url": "/vue-pwa-webpack/dist/static/css/index.c5735f3d.css"
   },
   {
-    "revision": "ec652c7996d4f6bfdd265350b4a745a6",
+    "revision": "7cecceb374eb9d6594f275311b3fab3c",
     "url": "/vue-pwa-webpack/dist/index.html"
   },
   {

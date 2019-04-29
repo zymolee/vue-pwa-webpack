@@ -1,6 +1,6 @@
 {
     "mode": "history",
-    "base": "/",
+    "base": "/vue-pwa-webpack/dist/",
     "routes": [
         {
             "path": "/appshell",

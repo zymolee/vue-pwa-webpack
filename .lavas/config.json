@@ -1,10 +1,10 @@
 {
-    "buildVersion": 1556510042394,
+    "buildVersion": 1556515870227,
     "build": {
         "ssr": false,
-        "publicPath": "/vue-pwa-webpack/dist/",
-        "compress": true,
-        "cssExtract": true
+        "publicPath": "/",
+        "compress": false,
+        "cssExtract": false
     },
     "middleware": {
         "all": [],

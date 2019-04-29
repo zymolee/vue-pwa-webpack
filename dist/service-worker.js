@@ -1,4 +1,4 @@
-importScripts("/vue-pwa-webpack/dist/precache-manifest.22aaebbcf19b26bdc403d39f12fbd225.js");
+importScripts("/vue-pwa-webpack/dist/precache-manifest.17c1a235318fb44a61503d7abc2fcff6.js");
 
 
         importScripts('/vue-pwa-webpack/dist/static/workbox-v3.6.3/workbox-sw.js');
