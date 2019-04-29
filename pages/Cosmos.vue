@@ -73,7 +73,6 @@ export default {
 			camera.aspect = window.innerWidth / window.innerHeight;
 			camera.updateProjectionMatrix();
 			renderer.setSize( window.innerWidth, window.innerHeight );
-			console.log('111');
 		},
 	},
 	async asyncData({store, route}) {
