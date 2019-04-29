@@ -1,6 +1,6 @@
 {
     "mode": "history",
-    "base": "/",
+    "base": "/pwa_three_show/",
     "routes": [
         {
             "path": "/appshell",

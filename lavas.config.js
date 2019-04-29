@@ -14,8 +14,7 @@ module.exports = {
     build: {
         ssr: false,
         path: BUILD_PATH,
-        // publicPath: isDev ?'/':'/vue-pwa-webpack/dist/',// github pages
-        publicPath: '/',
+        publicPath: isDev ? '/' : '/pwa_three_show/',// github pages
         ssrCopy: isDev ? [] : [
             {
                 src: 'server.prod.js'
@@ -27,8 +26,7 @@ module.exports = {
     },
     router: {
         mode: 'history',
-        // base: '/vue-pwa-webpack/dist/',// github pages
-        base: '/',
+        base: isDev ? '/' : '/pwa_three_show/',// github pages
         pageTransition: {
             type: 'fade',
             transitionClass: 'fade'

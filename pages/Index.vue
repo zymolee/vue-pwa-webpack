@@ -24,7 +24,7 @@ export default {
 	name: 'index',
 	data() {
 		return {
-			baseurl:'../static/img/home/',
+			baseurl:'./static/img/home/',
 		};
 	},
 	metaInfo: {
@@ -37,7 +37,11 @@ export default {
 	},
 	methods: {
     go3d: function () {
-      window.location.href="/Cosmos/"
+    	if (window.location.pathname.indexOf('pwa_three_show')>=0) {
+    		window.location.href="/pwa_three_show/Cosmos/";
+    		return;
+    	}
+    		window.location.href="/Cosmos/";
     }
   },
 	async asyncData({store, route}) {

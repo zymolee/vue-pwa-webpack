@@ -1,7 +1,7 @@
 
-        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/pwa_three_show/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/static/workbox-v3.6.3/'
+            modulePathPrefix: '/pwa_three_show/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -48,4 +48,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
-workbox.routing.registerNavigationRoute('/index.html');
+workbox.routing.registerNavigationRoute('/pwa_three_show/index.html');

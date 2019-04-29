@@ -1,9 +1,9 @@
-importScripts("/precache-manifest.089ee7da6cf3f05d8a04ac7e49e1137a.js");
+importScripts("/pwa_three_show/precache-manifest.147dd7405aa44a435d36822de61acd35.js");
 
 
-        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/pwa_three_show/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/static/workbox-v3.6.3/'
+            modulePathPrefix: '/pwa_three_show/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -50,4 +50,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
-workbox.routing.registerNavigationRoute('/index.html');
+workbox.routing.registerNavigationRoute('/pwa_three_show/index.html');

@@ -1,10 +1,10 @@
 {
-    "buildVersion": 1556516655920,
+    "buildVersion": 1556519724733,
     "build": {
         "ssr": false,
-        "publicPath": "/",
-        "compress": false,
-        "cssExtract": false
+        "publicPath": "/pwa_three_show/",
+        "compress": true,
+        "cssExtract": true
     },
     "middleware": {
         "all": [],
@@ -13,7 +13,7 @@
     },
     "router": {
         "mode": "history",
-        "base": "/",
+        "base": "/pwa_three_show/",
         "pageTransition": {
             "type": "fade",
             "transitionClass": "fade"
