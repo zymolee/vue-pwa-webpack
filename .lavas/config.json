@@ -1,8 +1,8 @@
 {
-    "buildVersion": 1556437086069,
+    "buildVersion": 1556510042394,
     "build": {
         "ssr": false,
-        "publicPath": "/",
+        "publicPath": "/vue-pwa-webpack/dist/",
         "compress": true,
         "cssExtract": true
     },
@@ -16,7 +16,6 @@
         "base": "/",
         "pageTransition": {
             "type": "fade",
-            "effect": "fade",
             "transitionClass": "fade"
         }
     },

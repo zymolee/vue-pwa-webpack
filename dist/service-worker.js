@@ -1,9 +1,9 @@
-importScripts("/precache-manifest.b9bb7664dd5b1082ca2732bf9b9b8f86.js");
+importScripts("/vue-pwa-webpack/dist/precache-manifest.22aaebbcf19b26bdc403d39f12fbd225.js");
 
 
-        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        importScripts('/vue-pwa-webpack/dist/static/workbox-v3.6.3/workbox-sw.js');
         workbox.setConfig({
-            modulePathPrefix: '/static/workbox-v3.6.3/'
+            modulePathPrefix: '/vue-pwa-webpack/dist/static/workbox-v3.6.3/'
         });
     /**
  * @file service-worker.js with workbox api
@@ -50,4 +50,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //         ]
 //     })
 // );
-workbox.routing.registerNavigationRoute('/index.html');
+workbox.routing.registerNavigationRoute('/vue-pwa-webpack/dist/index.html');

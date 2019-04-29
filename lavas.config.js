@@ -14,7 +14,7 @@ module.exports = {
     build: {
         ssr: false,
         path: BUILD_PATH,
-        publicPath: '/',
+        publicPath: isDev ?'/':'/vue-pwa-webpack/dist/',
         ssrCopy: isDev ? [] : [
             {
                 src: 'server.prod.js'
@@ -29,7 +29,6 @@ module.exports = {
         base: '/',
         pageTransition: {
             type: 'fade',
-            effect: 'fade',
             transitionClass: 'fade'
         }
     },

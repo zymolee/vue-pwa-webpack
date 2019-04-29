@@ -20,7 +20,8 @@
         "es6-promise": "^4.1.1",
         "express": "^4.0.0",
         "lavas-core-vue": "^1.2.0",
-        "normalize.css": "^7.0.0"
+        "normalize.css": "^7.0.0",
+        "three-js": "^79.0.0"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.4.3",
