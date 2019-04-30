@@ -1,10 +1,10 @@
 {
-    "buildVersion": 1556524594309,
+    "buildVersion": 1556620825525,
     "build": {
         "ssr": false,
-        "publicPath": "/pwa_three_show/",
-        "compress": true,
-        "cssExtract": true
+        "publicPath": "/",
+        "compress": false,
+        "cssExtract": false
     },
     "middleware": {
         "all": [],
@@ -13,7 +13,7 @@
     },
     "router": {
         "mode": "history",
-        "base": "/pwa_three_show/",
+        "base": "/",
         "pageTransition": {
             "type": "fade",
             "transitionClass": "fade"
@@ -33,7 +33,7 @@
         "asyncCSS": true,
         "routes": [
             {
-                "path": "/pwa_three_show/",
+                "path": "/",
                 "skeletonId": "my-skeleton",
                 "componentPath": "core/Skeleton.vue"
             }

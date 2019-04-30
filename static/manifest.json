@@ -1,25 +1,25 @@
 {
-    "start_url": "/pwa_three_show/?utm_source=homescreen",
+    "start_url": "/pwa_three_show/",
     "name": "pwa-THREE",
     "short_name": "pwaT",
     "icons": [
         {
-            "src": "img/icons/android-chrome-512x512.png",
+            "src": "/pwa_three_show/static/img/icons/android-chrome-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         },
         {
-            "src": "img/icons/android-chrome-192x192.png",
+            "src": "/pwa_three_show/static/img/icons/android-chrome-192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "img/icons/apple-touch-icon-180x180.png",
+            "src": "/pwa_three_show/static/img/icons/apple-touch-icon-180x180.png",
             "type": "image/png",
             "sizes": "180x180"
         },
         {
-            "src": "img/icons/apple-touch-icon-152x152.png",
+            "src": "/pwa_three_show/static/img/icons/apple-touch-icon-152x152.png",
             "type": "image/png",
             "sizes": "152x152"
         }

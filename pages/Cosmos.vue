@@ -1,102 +1,118 @@
 <template>
-	<div class="cosmos-page">
-		<div class="wraper" id="cosmos">
-      <!-- <div id="container"></div> -->
-		</div>
-	</div>
+    <div class="home-page skeleton-wrapper">
+        <div class="wraper">
+            <div class="planet" @click="go3d">
+                <div class="earth">
+                    <img src="../static/img/home/earth.png"/>
+                </div>
+                <div class="rocket">
+                    <div class="r-body">
+                        <img src="../static/img/home/satellite-station.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import THREELib from "three-js";
-import DeviceOrientationControls from '../core/js/controls/DeviceOrientationControls';
-
-function setState(store) {
-
-}
-const THREE = THREELib();
-			THREE.DeviceOrientationControls = DeviceOrientationControls(THREE);
-
-let camera, scene, renderer, controls;
 
 export default {
-	name: 'index',
-	metaInfo: {
-		title: 'cosmos',
-		titleTemplate: '%s - WoW',
-		meta: [
-			{name: 'keywords', content: 'cosmos'},
-			{name: 'description', content: '基于 Vue 的 PWA 解决方案'}
-		]
-	},
-	data() {
-		return {
-			a:''
-		};
-	},
-	mounted: function() {
-		this.init();
-		this.animate()
-	},
-	methods: {
-		init: function() {
-			camera = new THREE.PerspectiveCamera(
-				75, // 相机视角的夹角
-				window.innerWidth / window.innerHeight, // 相机画幅比
-				1, // 最近焦距
-				1000 // 最远焦距 
-			);
-			// camera.target = new THREE.Vector3(0, 0, 0); // 设置相机的观察位置，通常在球心
-
-			controls = new THREE.DeviceOrientationControls( camera );// 添加设备陀螺仪控制
-			scene = new THREE.Scene(); // 创建场景
-			let geometry = new THREE.SphereBufferGeometry( 500, 60, 40 ); // 创建球形几何图形用以建立VR视图结构
-			geometry.scale( - 1, 1, 1 ); // 在贴图的时候，让像素点朝内（非常重要)
-			let material = new THREE.MeshBasicMaterial( { // 添加贴图素材
-				map: new THREE.TextureLoader().load( `../static/img/cosmos/sky.jpg`) 
-			} );
-			let mesh = new THREE.Mesh( geometry, material ); // 拼接贴图与几何图形
-			scene.add( mesh ); // 将贴图后的图形加入场景
-			//
-			renderer = new THREE.WebGLRenderer( { antialias: true } );
-			renderer.setPixelRatio( window.devicePixelRatio );
-			renderer.setSize( window.innerWidth, window.innerHeight ); // 定义尺寸
-			document.getElementById('cosmos').appendChild( renderer.domElement ); // 将场景到加入页面中
-			//
-			window.addEventListener( 'resize', this.onWindowResize, false );// 监听视窗变化
-		},
-		animate: function() {
-			controls.update();
-			renderer.render( scene, camera );
-			window.requestAnimationFrame( this.animate );
-		},
-		onWindowResize: function(){
-			camera.aspect = window.innerWidth / window.innerHeight;
-			camera.updateProjectionMatrix();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-		},
-	},
-	async asyncData({store, route}) {
-		setState(store);
-	}
+    name: 'skeleton'
 };
-// <!-- normal -->
 </script>
 
 <style lang="stylus" scoped>
+.home-page.skeleton-wrapper{
+    width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    .wraper{
+        background: #000;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        .planet{
+            width:45vw;
+            position:relative;
+            .earth{
+                transform: rotateZ(0deg);
+                animation: rotateAni 8s linear infinite;
+            }
+            &:after{
+                content: '';
+                display:block;
+                width:100%;
+                height:100%;
+                border-radius: 100%;
+                overflow: hidden;
 
-.cosmos-page{
-	.wraper{
-		background: #000;
-		width: 100vw;
-		height: 100vh;
-		display: flex;
-		justify-content:center;
-		align-items:center;
-		#container{
-			width: 100vw;
-			height: 100vh;
-		}
-	}
+                position:absolute;
+                top: 0;
+                left: 0;
+            }
+            .rocket{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform-origin: 50% 50%;
+                transform: translate(-50%,-50%);
+                animation: rotateAni_r 6s linear infinite;
+                .r-body{
+                    position: absolute;
+                    width: 10vw;
+                    top: 50%;
+                    left: 26vw;
+                    animation: rotateAni 6s linear infinite;
+                    // &:after{
+                        // display:block;
+                        // content: '';
+                        // width:3vw;
+                        // height:5vw;
+                        // margin: -3vw auto 0;
+                        // transform: rotateZ(180deg);
+                        // background:url('../static/img/home/flame1.png') no-repeat;
+                        // background-size: 300%;
+                        // background-position-x: 0;
+                        // animation: flame .2s step-start infinite;
+                    // }
+                }
+            }
+        }
+    }
 }
-
+@keyframes rotateAni {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes rotateAni_r {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+@keyframes flame {
+    0% {
+        background-position-x: 0%;
+    }
+    33%{
+        background-position-x: 50%;
+    }
+    66%{
+        background-position-x: 99%;
+    }
+    100% {
+        background-position-x: 0%;
+    }
+}
 </style>
