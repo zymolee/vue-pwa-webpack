@@ -173,11 +173,13 @@ export default {
 			renderer.setSize( window.innerWidth, window.innerHeight ); // 定义尺寸
 			document.getElementById('cosmos').appendChild( renderer.domElement ); // 将场景到加入页面中
 			//
-			window.addEventListener( 'resize', this.onWindowResize, false );// 监听视窗变化
 		},
 		animate: function() {
 			controls.update();
 			this.setmesh();
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize( window.innerWidth, window.innerHeight );
 			renderer.render( scene, camera );
 			window.requestAnimationFrame( this.animate );
 		},
@@ -230,11 +232,6 @@ export default {
 			  map: new THREE.TextureLoader().load(`./static/img/cosmos/${d}`),
 			});
 			return new THREE.Mesh( geometry, material );
-		},
-		onWindowResize: function(){
-			camera.aspect = window.innerWidth / window.innerHeight;
-			camera.updateProjectionMatrix();
-			renderer.setSize( window.innerWidth, window.innerHeight );
 		},
 	},
 	async asyncData({store, route}) {

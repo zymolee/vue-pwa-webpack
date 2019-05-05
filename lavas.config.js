@@ -36,7 +36,9 @@ module.exports = {
         // If true, generate service-worker.js and sw-register.js
         // Default to `false`
         enable: true,
-
+        globPatterns: [
+            '**/*.{html,js,css,eot,svg,ttf,woff}'
+        ],
         // Path of service worker template
         swSrc: path.join(__dirname, 'core/service-worker.js'),
 
@@ -52,6 +54,7 @@ module.exports = {
         appshellUrl: '/appshell'
     },
     skeleton: {
+        enable: true,
         routes: [
             {
                 path: isDev ? '/' : '/pwa_three_show/',
