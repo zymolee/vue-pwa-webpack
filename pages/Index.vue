@@ -60,11 +60,11 @@ export default {
 	},
 	methods: {
 		changeCamera:function(){
-			const {cameralist,cameraIndex} = this;
-			const num = cameraIndex + 1;
+			const {cameralist} = this;
+			const num = this.cameraIndex + 1;
 			camera.position.set(cameralist[num][0],cameralist[num][1],cameralist[num][2]);
 			// renderer.render( scene, camera );
-			if (this.cameraIndex === 12) {
+			if (this.cameraIndex === 10) {
 				this.cameraIndex = 0;
 				return;
 			}
@@ -250,8 +250,9 @@ export default {
 	position:relative;
 	.change-button{
 		position:absolute;
-		left:0;
-		top:0;
+		right:0;
+		bottom:0;
+		padding: 21px;
 		background:rgba(255,255,255,.2);
 	}
 	.wraper{
