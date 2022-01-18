@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1557025898783,
+    "buildVersion": 1642500778215,
     "build": {
         "ssr": false,
         "publicPath": "/pwa_three_show/",
@@ -26,7 +26,7 @@
     },
     "serviceWorker": {
         "enable": true,
-        "swDest": "/Users/zymo/work/vue-pwa-webpack/dist/service-worker.js"
+        "swDest": "/Users/zymo/dev/vue-pwa-webpack/dist/service-worker.js"
     },
     "skeleton": {
         "enable": true,

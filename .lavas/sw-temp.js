@@ -28,6 +28,8 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 // workbox.routing.registerRoute(/^https:\/\/lavas\.baidu\.com\/some\/api/,
 //     workbox.strategies.networkFirst());
 
+workbox.routing.registerRoute(/^https:\/\/zymolee\.github\.io\/pwa_three_show\/static/,
+    workbox.strategies.networkFirst());
 
 /**
  * example runningCache with resources from CDN

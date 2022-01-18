@@ -1,4 +1,4 @@
-importScripts("/pwa_three_show/precache-manifest.b9f3b4505aa45de00da482b49fb395a3.js");
+importScripts("/pwa_three_show/precache-manifest.a952fa254d08905a1b84558543138d32.js");
 
 
         importScripts('/pwa_three_show/static/workbox-v3.6.3/workbox-sw.js');
@@ -30,6 +30,8 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 // workbox.routing.registerRoute(/^https:\/\/lavas\.baidu\.com\/some\/api/,
 //     workbox.strategies.networkFirst());
 
+workbox.routing.registerRoute(/^https:\/\/zymolee\.github\.io\/pwa_three_show\/static/,
+    workbox.strategies.networkFirst());
 
 /**
  * example runningCache with resources from CDN
