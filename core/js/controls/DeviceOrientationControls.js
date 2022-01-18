@@ -61,14 +61,12 @@ export default function DeviceOrientationControls(THREE) {
 		this.connect = function () {
 
 			onScreenOrientationChangeEvent(); // run once on load
-
+			
 			if ( window.DeviceOrientationEvent !== undefined && typeof window.DeviceOrientationEvent.requestPermission === 'function' ) {
 			    window.DeviceOrientationEvent.requestPermission().then( function ( response ) {
-
-			        if ( response == 'granted' ) {
-						window.addEventListener( 'orientationchange', onScreenOrientationChangeEvent, false );
-						window.addEventListener( 'deviceorientation', onDeviceOrientationChangeEvent, false );
-			        }
+						window.addEventListener( 'devicerientation', onScreenOrientationChangeEvent, false );
+						window.addEventListener( 'devicerientation', onDeviceOrientationChangeEvent, false );
+						// window.addEventListener( 'devicemotion', onDeviceOrientationChangeEvent, false );
 
 			    } ).catch( function ( error ) {
 
@@ -77,10 +75,8 @@ export default function DeviceOrientationControls(THREE) {
 			    } );
 
 			} else {
-
-					window.addEventListener( 'orientationchange', onScreenOrientationChangeEvent, false );
-					window.addEventListener( 'deviceorientation', onDeviceOrientationChangeEvent, false );
-
+				alert('不支持陀螺仪');
+					
 			}			
 
 			scope.enabled = true;
