@@ -1,7 +1,7 @@
 <template>
 	<div class="cosmos-page">
 		<button @click='changeCamera' class="change-button">change</button>
-		<button @click='openDeviceOrientationEvent' v-if="show" class="change-button2">开启陀螺仪</button>
+		<button @click='openDeviceOrientationEvent' v-show="show" class="change-button2">开启陀螺仪</button>
 		<div class="wraper" id="cosmos">
       <!-- <div id="container"></div> -->
 		</div>
@@ -63,6 +63,7 @@ export default {
 		openDeviceOrientationEvent:function(){
 			let init = this.init,
 				animate = this.animate;
+			this.show = false;
 			if ( window.DeviceOrientationEvent !== undefined && typeof window.DeviceOrientationEvent.requestPermission === 'function' ) {
 				// alert('true');
 			    window.DeviceOrientationEvent.requestPermission().then( function ( response ) {
@@ -70,14 +71,12 @@ export default {
 						animate();
 			    } ).catch( function ( error ) {
 			        alert( 'Unable to use DeviceOrientation API:', error );
-
 			    } );
-
 			} else {
 				alert('不支持陀螺仪');
 					
 			}
-			this.show = false;
+			
 		},
 		changeCamera:function(){
 			const {cameralist} = this;
